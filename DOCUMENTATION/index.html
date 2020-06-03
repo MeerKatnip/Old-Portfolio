@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Documentation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="Ivor" name="author" />
+    <!-- THANK YOU IVOR :) -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="images/apple-touch-icon-72x72.png"
+      rel="apple-touch-icon"
+      sizes="72x72"
+    />
+    <link
+      href="images/apple-touch-icon-114x114.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+    />
+  </head>
+
+  <body data-spy="scroll" id="top">
+    <!-- Documentation Navbar -->
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a
+            class="btn btn-navbar"
+            data-target=".nav-collapse"
+            data-toggle="collapse"
+          ></a>
+          <a class="brand" href="#">Prime Studio</a>
+          <!-- TIP: Change this for the name of your file -->
+
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a class="active" href="#top">Top</a></li>
+
+              <li><a href="#markup">Markup</a></li>
+
+              <li><a href="#plugins">Plugins Used</a></li>
+
+              <li><a href="#styles">Styles</a></li>
+
+              <li><a href="#javascript">JavaScript</a></li>
+
+              <li><a href="#emailform">Email Form</a></li>
+
+              <li><a href="#credits">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Navbar -->
+    <!-- Main Container Beginning -->
+
+    <div class="container">
+      <div class="masthead">
+        <h1>Phoenix One Page Parallax Documentation</h1>
+
+        <p class="marketing-byline">
+          Phoenix One Page Parallax Retina Ready Creative Template
+        </p>
+
+        <p>
+          Fully responsive one paged template built on Bootstrap 3 Framework.
+        </p>
+
+        <p class="download-info">
+          <a
+            class="btn btn-primary btn-large"
+            href="http://themeforest.net/user/artbreeze"
+            >Item Support</a
+          >
+        </p>
+      </div>
+      <!-- masthead -->
+
+      <div id="intro">
+        <p class="highlight hero-unit">
+          Thank you for purchasing my theme. If you have any questions that are
+          beyond the scope of this help file, please feel free to email via my
+          user page contact form
+          <a href="http://themeforest.net/user/artbreeze">here</a>. Thanks so
+          much!
+        </p>
+      </div>
+      <!-- intro -->
+
+      <section id="markup">
+        <div class="page-header">
+          <h1>Markup <small>Markup customization and highlights</small></h1>
+        </div>
+        <!--     <div class="alert"> <a class="close" data-dismiss="alert">×</a> <strong>Warning!</strong> Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.. </div> -->
+
+        <p>
+          Phoenix One Page Parallax is a multipurpose template that can be used
+          by a creative agency, a corporate company or as personal portfolio for
+          a freelancer .
+        </p>
+
+        <p>
+          It is a fully responsive one paged template built on Bootstrap 3
+          Framework which is a powerful mobile-first framework. It is Retina
+          display ready, it is using the Parallax plugin and Isotope filtering
+          for a powerful portfolio section.
+        </p>
+        <hr />
+
+        <div class="row">
+          <div class="span3">
+            <h3>General Markup</h3>
+
+            <p>
+              The general template structure is the same throughout the
+              template. Here is the general structure.
+            </p>
+          </div>
+
+          <div class="span9">
+            <pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;!-- Meta Data --&gt;
+        &lt;title&gt;Phoenix Parallax One Page Template&lt;/title&gt;
+        &lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;&quot;/&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;img/favicon/apple-touch-icon-57x57.png&quot;&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;img/favicon/apple-touch-icon-114x114.png&quot;&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;img/favicon/apple-touch-icon-72x72.png&quot;&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;img/favicon/apple-touch-icon-144x144.png&quot;&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;60x60&quot; href=&quot;img/favicon/apple-touch-icon-60x60.png&quot;&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;120x120&quot; href=&quot;img/favicon/apple-touch-icon-120x120.png&quot;&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;76x76&quot; href=&quot;img/favicon/apple-touch-icon-76x76.png&quot;&gt;
+        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;152x152&quot; href=&quot;img/favicon/apple-touch-icon-152x152.png&quot;&gt;
+        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;img/favicon/favicon-196x196.png&quot; sizes=&quot;196x196&quot;&gt;
+        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;img/favicon/favicon-160x160.png&quot; sizes=&quot;160x160&quot;&gt;
+        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;img/favicon/favicon-96x96.png&quot; sizes=&quot;96x96&quot;&gt;
+        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;img/favicon/favicon-16x16.png&quot; sizes=&quot;16x16&quot;&gt;
+        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;img/favicon/favicon-32x32.png&quot; sizes=&quot;32x32&quot;&gt;
+        &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#333333&quot;&gt;
+        &lt;meta name=&quot;msapplication-TileImage&quot; content=&quot;img/favicon/mstile-144x144.png&quot;&gt;
+
+
+        &lt;!-- Fonts--&gt;
+        &lt;link href=&#39;http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;&gt;
+        &lt;link href=&#39;http://fonts.googleapis.com/css?family=Montserrat:400,700&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;&gt;
+        &lt;link href=&quot;css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;!-- Bootstrap --&gt;
+        &lt;link href=&quot;css/bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;link href=&quot;css/owl.carousel.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;link href=&quot;css/responsive.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+
+
+
+        &lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+        &lt;!-- WARNING: Respond.js doesn&#39;t work if you view the page via file:// --&gt;
+        &lt;!--[if lt IE 9]&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+        &lt;![endif]--&gt;
+    &lt;/head&gt;
+
+
+&lt;body&gt;
+</pre
+            >
+          </div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="span3">
+            <h3>Features</h3>
+
+            <p>Main features of the file</p>
+          </div>
+
+          <div class="span9">
+            <ol>
+              <li>Minimal and Bold Design</li>
+              <li>Unique design</li>
+              <li>3 Homepage Versions</li>
+              <li><strong> Isotope Portfolio filtering (Save $25)</strong></li>
+              <li>Parallax One Page</li>
+              <li>Animated Counters</li>
+              <li>100% Responsive</li>
+              <li>Clean Code</li>
+              <li>Bootstrap 3 Framework</li>
+              <li>Browser Compatibility</li>
+              <li>Filterable Portfolio</li>
+              <li>AJAX Portfolio</li>
+              <li>Video Background Home Version</li>
+              <li>Working contact form</li>
+              <li>400+ Font Awesome Icons</li>
+              <li>Retina Ready</li>
+              <li>Pricing Tables</li>
+              <li>Google Fonts</li>
+              <li>Logo PSD included - so you can create your own</li>
+              <li>Progress Bars</li>
+              <li>Customized Google Map</li>
+              <li>and much more...</li>
+            </ol>
+          </div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="span12">
+            <p class="highlight hero-unit">
+              In the zip package you download you will find 3 folders: HTML,
+              DOCUMENTATION and PSD (containing the logo PSD).
+            </p>
+            <ul>
+              <li>
+                HTML FOLDER: this is the folder that concerns you. It contains
+                the main html and css files. Make the customizations you need
+                and upload this folder files to you server.
+              </li>
+
+              <li>DOCUMENTATION: info about this template</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <!-- Markup -->
+
+      <section id="plugins">
+        <div class="page-header">
+          <h1>
+            Plug-ins Used <small>Small description of every plugin used.</small>
+          </h1>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Plugin Name</th>
+
+                  <th>Description</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><code>Font-Awesome</code></td>
+
+                  <td>
+                    Font Awesome gives you scalable vector icons that can
+                    instantly be customized — size, color, drop shadow, and
+                    anything that can be done with the power of CSS.<br />
+                    For more info and full preview of the icons visit:
+                    <a href="http://fortawesome.github.io/Font-Awesome/"
+                      >http://fortawesome.github.io/Font-Awesome/</a
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>Owl Carousel</code></td>
+
+                  <td>
+                    Touch enabled jQuery plugin that lets you create beautiful
+                    responsive carousel slider.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>Isotope</code></td>
+
+                  <td>
+                    Wonderful plugin used for gallery filtering and for creating
+                    a beautiful layout for it.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>Backstretch</code></td>
+
+                  <td>
+                    A simple jQuery plugin that allows you to add a
+                    dynamically-resized, slideshow-capable background image to
+                    any page or element
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>Parallax</code></td>
+
+                  <td>
+                    Parallax plugin is a technique of scrolling to move images,
+                    text around the web page frame to create interesting visual
+                    movements.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>Images Loaded</code></td>
+
+                  <td>Detect when images have been loaded.</td>
+                </tr>
+
+                <tr>
+                  <td><code>Retina.js</code></td>
+
+                  <td>
+                    When your users load a page, retina.js checks each image on
+                    the page to see if there is a high-resolution version of
+                    that image on your server. If a high-resolution variant
+                    exists, the script will swap in that image in-place.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section id="styles">
+        <div class="page-header">
+          <h1>Styles <small>Styles customization and highlights</small></h1>
+        </div>
+
+        <div class="row">
+          <div class="span3">
+            <h3>Stylesheets</h3>
+
+            <p>
+              Here's a list of the stylesheet files I'm using with this
+              template, you can find more information opening each file:
+            </p>
+          </div>
+
+          <div class="span9">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>File Name</th>
+
+                  <th>Description</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><code>css/font-awesome.min.css</code></td>
+
+                  <td>
+                    Font Awesome gives you scalable vector icons that can
+                    instantly be customized — size, color, drop shadow, and
+                    anything that can be done with the power of CSS.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>css/bootstrap.min.css</code></td>
+
+                  <td>Bootstrap's Base CSS file</td>
+                </tr>
+
+                <tr>
+                  <td><code>css/owl.carousel.css</code></td>
+
+                  <td>OWL Carousel's css file.</td>
+                </tr>
+
+                <tr>
+                  <td><code>style.css</code></td>
+
+                  <td>
+                    Main Stylesheet of the template - where you will find most
+                    of the customizable CSS.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>responsive.css</code></td>
+
+                  <td>Responsive Stylesheet of the template.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Styles -->
+
+      <section id="javascript">
+        <div class="page-header">
+          <h1>
+            JavaScript <small>JavaScript customization and highlights</small>
+          </h1>
+        </div>
+
+        <div class="row">
+          <div class="span3">
+            <h3>JavaScript Files</h3>
+
+            <p>
+              Vestibulum id ligula porta felis euismod semper. Curabitur blandit
+              tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum
+              faucibus dolor auctor.
+            </p>
+          </div>
+
+          <div class="span9">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Plugin Filename</th>
+
+                  <th>Description</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><code>jquery.min.js</code></td>
+
+                  <td>jQuery library main file</td>
+                </tr>
+
+                <tr>
+                  <td><code>bootstrap.min.js</code></td>
+
+                  <td>Bootstrap javascript file</td>
+                </tr>
+
+                <tr>
+                  <td><code>isotope.pkgd.js</code></td>
+
+                  <td>js file used for Isotope filtering</td>
+                </tr>
+
+                <tr>
+                  <td><code>owl.carousel.js</code></td>
+
+                  <td>js file used for #clients and #testimonials carousel</td>
+                </tr>
+
+                <tr>
+                  <td><code>jquery.backstretch.js</code></td>
+
+                  <td>
+                    A simple jQuery plugin that allows you to add a
+                    dynamically-resized, slideshow-capable background image to
+                    any page or element
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>jquery.stellar.js</code></td>
+
+                  <td>
+                    Parallax plugin is a technique of scrolling to move images,
+                    text around the web page frame to create interesting visual
+                    movements.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>imagesloaded.pkgd.js</code></td>
+
+                  <td>Detect when images have been loaded.</td>
+                </tr>
+
+                <tr>
+                  <td><code>retina.min.js</code></td>
+
+                  <td>
+                    When your users load a page, retina.js checks each image on
+                    the page to see if there is a high-resolution version of
+                    that image on your server. If a high-resolution variant
+                    exists, the script will swap in that image in-place.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><code>fitvids.js</code></td>
+
+                  <td>Making embbed videos responsive.</td>
+                </tr>
+
+                <tr>
+                  <td><code>custom.js</code></td>
+                  <td>
+                    js file for initialization and customization of the plugins
+                    found above
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="span3">
+            <h3>Change Background Image</h3>
+
+            <p>
+              If you want to change the background image of the intro section,
+              open up the file <code>index.html</code> and change the following
+              code:
+            </p>
+          </div>
+
+          <div class="span9">
+            <pre class="prettyprint js linenums">
+        /* BACKSTRETCH FULL WIDTH INTRO IMAGE */
+        $('#intro').ready(function() {
+            $.backstretch("img/background1.jpg");
+        });
+</pre
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="span3">
+            <h3>Customize Slider</h3>
+
+            <p>
+              If you want to change the slider's speed transition, open up the
+              file <code>index-slider.html</code> and change the following code:
+            </p>
+          </div>
+
+          <div class="span9">
+            <pre class="prettyprint js linenums">
+            // Duration is the amount of time in between slides,
+            // and fade is value that determines how quickly the next image will fade in
+                $.backstretch([
+                    "img/background1.jpg"
+                    , "img/background2.jpg"
+                    , "img/background3.jpg"
+                ], {duration: 2000, fade: 750});
+</pre
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="span3">
+            <h3>Customize Clients and Testimonials Slider</h3>
+
+            <p>
+              If you want to change the slider's speed transition, open up the
+              file <code>custom.js</code> and change the following code:
+            </p>
+          </div>
+
+          <div class="span9">
+            <pre class="prettyprint js">
+$(document).ready(function(){
+    'use strict';
+    $("#owl-clients").owlCarousel({
+        margin:20,
+        loop:true,
+        stagePadding:50,
+        autoplay:true,
+        responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items:1
+            },
+            // breakpoint from 480 up
+            480 : {
+                items:3
+                  },
+        // breakpoint from 768 up
+        768 : {
+            items:4
+                }
+        },
+        dots:false
+    });
+});
+
+$(document).ready(function(){
+    'use strict';
+    $("#owl-client-testimonials").owlCarousel({
+        items:3,
+        loop:true,
+        autoplay:true,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:1
+            },
+            // breakpoint from 480 up
+            480 : {
+                items:2
+            },
+            // breakpoint from 768 up
+            768 : {
+                items:3
+            }
+        },
+        nav:true,
+        navText:[
+            "<i class='fa fa-angle-left fa-2x'></i>",
+            "<i class='fa fa-angle-right fa-2x'></i>"
+        ]
+    });
+});
+
+
+$(document).ready(function(){
+    'use strict';
+    $("#owl-team").owlCarousel({
+        items:4,
+        loop:false,
+        autoplay:true,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:1
+            },
+            // breakpoint from 480 up
+            480 : {
+                items:2
+            },
+            // breakpoint from 768 up
+            768 : {
+                items:3
+            },
+
+            1195 :{
+                items:4
+            }
+        },
+        nav:false,
+        dots:false
+    });
+});
+
+
+
+</pre>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span3">
+            <h3>Customize Timers</h3>
+
+            <p>
+              Customize the counters found in the #charts section by opening
+              <code>custom.js</code> and change the following code:
+            </p>
+          </div>
+
+          <div class="span9">
+            <pre class="prettyprint js linenums:84">
+$('#charts').waypoint(function() {
+    "use strict";
+    // first timer
+    $('.timer1').countTo({
+
+        from: 0, // the number you want to start
+        to: 250, // the number you want to reach
+        speed: 250,
+        refreshInterval: 1
+
+    });
+
+    // second timer
+    $('.timer2').countTo({
+
+        from: 0,// the number you want to start
+        to: 70,// the number you want to reach
+        speed: 250,
+        refreshInterval: 1
+
+    });
+
+
+    // third timer
+    $('.timer3').countTo({
+
+        from: 0,// the number you want to start
+        to: 120,// the number you want to reach
+        speed: 250,
+        refreshInterval: 1
+    });
+
+
+    // fourth timer
+    $('.timer4').countTo({
+
+        from: 0,// the number you want to start
+        to: 101,// the number you want to reach
+        speed: 250,
+        refreshInterval: 1,
+        onComplete: function(value) {
+            $( '.timer' ).stop();
+        }
+
+    });
+
+
+}, { offset: 500 });
+
+
+</pre
+            >
+          </div>
+        </div>
+        <hr />
+      </section>
+      <!-- JavaScript -->
+
+      <section id="emailform">
+        <div class="page-header">
+          <h1>
+            E-mail Form <small>Customize the email form contact.php</small>
+          </h1>
+        </div>
+
+        <div class="row">
+          <div class="span3">
+            <h3>contact.php</h3>
+
+            <p>
+              The php file that process the information received from the
+              contact form (#contact) from the index.html
+            </p>
+          </div>
+
+          <div class="span9">
+            <pre class="prettyprint js linenums:32">
+$address = "xxx@nowhere.com";
+</pre
+            >
+          </div>
+        </div>
+
+        <hr />
+      </section>
+      <!-- email -->
+      <section id="credits">
+        <div class="page-header">
+          <h1>Credits Files <small>Some of your credits and sources</small></h1>
+        </div>
+
+        <p>I've used the following images, icons or other files as listed.</p>
+
+        <h3>JavaScript</h3>
+
+        <ol>
+          <li><a href="jquery.com">jQuery</a></li>
+          <li><a href="http://imulus.github.io/retinajs/">Retina</a></li>
+          <li><a href="http://isotope.metafizzy.co/">Isotope</a></li>
+
+          <li>
+            <a href="http://srobbin.com/jquery-plugins/backstretch/"
+              >Backstretch</a
+            >
+          </li>
+
+          <li>
+            <a href="https://github.com/OwlFonk/OwlCarousel">Owl carousel</a>
+          </li>
+          <li><a href="http://imagesloaded.desandro.com/">imagesLoaded</a></li>
+          <li><a href="http://imulus.github.io/retinajs/">Retina</a></li>
+        </ol>
+
+        <h3>Images</h3>
+
+        <ol>
+          <li><a href="https://unsplash.com">Unsplash</a></li>
+        </ol>
+      </section>
+      <!-- Credits -->
+
+      <hr />
+
+      <div class="goodbye">
+        <p>
+          Once again, thank you so much for purchasing this theme. As I said at
+          the beginning, I'd be glad to help you if you have any questions
+          relating to this theme. Just email me using the following form:
+          <a
+            href="https://themeforest.net/item/phoenix-minimal-multipurpose-portfolio/8676135/support"
+            >https://themeforest.net/item/phoenix-minimal-multipurpose-portfolio/8676135/support</a
+          >
+        </p>
+
+        <p>
+          My profile page -
+          <a href="http://themeforest.net/user/artbreeze"
+            >http://themeforest.net/user/artbreeze</a
+          >
+        </p>
+      </div>
+      <hr />
+
+      <footer>
+        <p>© ArtBreeze Studios 2019</p>
+      </footer>
+    </div>
+    <!-- /container --><!-- Le javascript
+    ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="assets/js/jquery.js"></script
+    ><script src="assets/js/scripts.js"></script
+    ><script src="assets/js/google-code-prettify/prettify.js"></script
+    ><script src="assets/js/bootstrap-transition.js"></script
+    ><script src="assets/js/bootstrap-alert.js"></script
+    ><script src="assets/js/bootstrap-modal.js"></script
+    ><script src="assets/js/bootstrap-dropdown.js"></script
+    ><script src="assets/js/bootstrap-scrollspy.js"></script
+    ><script src="assets/js/bootstrap-tab.js"></script
+    ><script src="assets/js/bootstrap-tooltip.js"></script
+    ><script src="assets/js/bootstrap-popover.js"></script
+    ><script src="assets/js/bootstrap-button.js"></script
+    ><script src="assets/js/bootstrap-collapse.js"></script>
+  </body>
+</html>
