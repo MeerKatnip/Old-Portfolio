@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -93,7 +93,12 @@ section .container {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); /* FF3.6+ */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* FF3.6+ */
   background: -webkit-gradient(
     radial,
     center center,
@@ -109,9 +114,23 @@ section .container {
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.8) 100%
   ); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); /* W3C */
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* Opera 12+ */
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* IE10+ */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -237,7 +256,7 @@ section .container {
 /*buttons*/
 
 .Underlinelink {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
@@ -248,7 +267,7 @@ section .container {
   background: transparent;
   border-radius: 0;
   border: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
@@ -278,7 +297,7 @@ section .container {
 .btn:before {
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 100%;
@@ -358,7 +377,7 @@ section .container {
 }
 
 .navbar-default .navbar-brand {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
@@ -412,7 +431,7 @@ section .container {
   line-height: 1.42857143;
   color: white;
   white-space: nowrap;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 10px;
@@ -468,7 +487,7 @@ section .container {
 }
 .dropdown-submenu > a:after {
   display: block;
-  content: ' ';
+  content: " ";
   float: right;
   width: 0;
   height: 0;
@@ -507,17 +526,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .lato {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
 }
 
 .lato-normal {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
@@ -558,7 +577,7 @@ h6 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -669,7 +688,7 @@ p.bold {
 }
 
 #text-separator,
-#text-separator-clients,
+#text-separator-skills,
 #text-separator-testimonials,
 #text-separator-timers {
   background-color: #1d1d1d;
@@ -680,7 +699,7 @@ p.bold {
 }
 
 #text-separator h2,
-#text-separator-clients h2,
+#text-separator-skills h2,
 #text-separator-testimonials h2 {
   color: white;
   z-index: 100;
@@ -688,7 +707,7 @@ p.bold {
 }
 
 #text-separator p,
-#text-separator-clients p,
+#text-separator-skills p,
 #text-separator-testimonials p {
   color: #e7e7e7;
   z-index: 100;
@@ -745,7 +764,7 @@ p.bold {
 }
 
 .whiteOverlay {
-  background: transparent url('img/gradient.png') bottom right repeat-y;
+  background: transparent url("img/gradient.png") bottom right repeat-y;
   bottom: 0;
   height: 500px;
   right: 0;
@@ -885,7 +904,7 @@ p.bold {
 .portfolioIntro {
   position: relative;
   z-index: 2;
-  background: url('img/portfolioIntro.jpg') no-repeat center center;
+  background: url("img/portfolioIntro.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -895,7 +914,12 @@ p.bold {
 }
 
 #portfolio .black-overlay {
-  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* FF3.6+ */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* FF3.6+ */
   background: -webkit-gradient(
     radial,
     center center,
@@ -911,9 +935,23 @@ p.bold {
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 1) 100%
   ); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* W3C */
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* Opera 12+ */
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* IE10+ */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -985,13 +1023,13 @@ p.bold {
 /* ---- isotope ---- */
 /* clear fix */
 .gallery:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
 
 .gallery-ecommerce:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -1229,7 +1267,7 @@ p.bold {
 }
 
 .memberDescription .position span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 10px;
   letter-spacing: 3px;
@@ -1253,15 +1291,15 @@ p.bold {
 }
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
-/*<!--clients logo -->*/
+/*<!--skillss logo -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#text-separator-clients {
+#text-separator-skills {
   padding-top: 110px;
   padding-bottom: 110px;
 }
 
-#text-separator-clients h3 span {
+#text-separator-skills h3 span {
   padding: 25px 50px;
   border: solid 10px white;
   font-size: 24px;
@@ -1270,7 +1308,7 @@ p.bold {
   color: white;
 }
 
-.clientLogo img {
+.skillsLogo img {
   width: 180px;
   margin-top: 15px;
 }
@@ -1312,7 +1350,7 @@ p.bold {
 .introServiceBox {
   position: relative;
   z-index: 2;
-  background: url('img/backgroundService.jpg') no-repeat center center;
+  background: url("img/backgroundService.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1490,7 +1528,7 @@ textarea {
   border-left: 5px solid #282828;
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #282828;
   letter-spacing: 1px;
 }
@@ -1504,7 +1542,7 @@ textarea {
   background: transparent;
   border-bottom: 5px solid #282828;
   border-left: 5px solid #282828;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #282828;
   font-size: 10px;
   text-transform: uppercase;
@@ -1610,7 +1648,7 @@ textarea {
   line-height: 54px;
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   letter-spacing: 1px;
 }
@@ -1711,7 +1749,7 @@ textarea {
 #countdown .countdown-period {
   font-size: 14px;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -1794,13 +1832,13 @@ ol {
 
 /* clear fix */
 .blogPostsWrapper:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
 
 .blogPostsWrapper2:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -1887,7 +1925,7 @@ ol {
   padding: 8px 12px;
   font-size: 12px;
   border-radius: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -2011,7 +2049,7 @@ ol {
 
 .nav-pills > li > a {
   border-radius: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 900;
@@ -2130,7 +2168,7 @@ ol {
   padding-top: 4px;
   padding-right: 8px;
   padding-left: 3px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
 
@@ -2347,7 +2385,7 @@ h2.AnimatedHeadline b i em {
 }
 .AnimatedHeadline.type .WordsWrapper::after {
   /* vertical bar */
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
@@ -2590,7 +2628,7 @@ h2.AnimatedHeadline b i em {
   margin-bottom: 20px;
 }
 .TeamMember .position span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 10px;
   letter-spacing: 3px;
@@ -2665,7 +2703,7 @@ h2.AnimatedHeadline b i em {
   color: #d5d5d5;
   letter-spacing: 0px;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .NavbarEcommerceTop .dropdown-menu {
@@ -2725,7 +2763,7 @@ h2.AnimatedHeadline b i em {
 
 .HeaderInfo {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 11px;
   margin: 0;
@@ -2734,7 +2772,7 @@ h2.AnimatedHeadline b i em {
 
 .HeaderInfo span {
   color: #aaa;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -2750,7 +2788,7 @@ h2.AnimatedHeadline b i em {
 
 .ShoppingCartNumber:after {
   width: 14px;
-  content: '';
+  content: "";
   background: white;
   position: absolute;
   height: 14px;
@@ -2777,7 +2815,7 @@ h2.AnimatedHeadline b i em {
   color: white;
   background-color: #181818;
   border-radius: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-color: #181818;
@@ -2994,7 +3032,7 @@ h2.AnimatedHeadline b i em {
   top: 60px;
   right: 40px;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   width: 100px;
   height: 100px;
@@ -3136,7 +3174,7 @@ h2.AnimatedHeadline b i em {
   background: #eee;
   position: relative;
   z-index: 999;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 10px;
   text-transform: uppercase;
@@ -3164,7 +3202,7 @@ h2.AnimatedHeadline b i em {
   background: transparent;
   color: black;
   font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 3px 5px;
   font-weight: 400;
@@ -3174,7 +3212,7 @@ h2.AnimatedHeadline b i em {
   background: red;
   color: white;
   font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 3px 5px;
   font-weight: 400;
@@ -3186,12 +3224,12 @@ h2.AnimatedHeadline b i em {
   letter-spacing: 0.75px;
   color: #1e1e1e;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .price {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #acb1b4;
   font-size: 11px;
   letter-spacing: 0.25px;
@@ -3413,7 +3451,7 @@ h2.AnimatedHeadline b i em {
 }
 
 .ColorBox.CheckMark:before {
-  content: '\f00c';
+  content: "\f00c";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -3679,7 +3717,7 @@ h2.AnimatedHeadline b i em {
 }
 
 .IntroBox1 .BackgroundImage {
-  background: url('img/portfolioIntro.jpg') no-repeat center center;
+  background: url("img/portfolioIntro.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3689,7 +3727,7 @@ h2.AnimatedHeadline b i em {
 }
 
 .IntroBox2 .BackgroundImage {
-  background: url('img/background5.jpg') no-repeat center center;
+  background: url("img/background5.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3699,7 +3737,7 @@ h2.AnimatedHeadline b i em {
 }
 
 .IntroBox3 .BackgroundImage {
-  background: url('img/background6.jpg') no-repeat center center;
+  background: url("img/background6.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3709,7 +3747,7 @@ h2.AnimatedHeadline b i em {
 }
 
 .IntroBox4 .BackgroundImage {
-  background: url('img/background7.jpg') no-repeat center center;
+  background: url("img/background7.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
