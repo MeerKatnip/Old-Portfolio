@@ -81,9 +81,9 @@ section .container {
   margin-bottom: 30px;
 }
 .preloaderLogo {
-  min-width: 200px;
+  min-width: 300px;
   max-width: 300px;
-  width: 15%;
+  width: 20%;
 }
 
 .black-overlay {
@@ -2950,7 +2950,7 @@ h2.AnimatedHeadline b i em {
 }
 
 .owl-carousel.owl-intro .owl-item {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .owl-carousel.owl-intro,
