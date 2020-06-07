@@ -1,30 +1,32 @@
-'use strict';
+"use strict";
 
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+  navigator.userAgent
+);
 
-$(document).ready(function() {
+$(document).ready(function () {
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* contact form init  */
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  $('#contactform').submit(function() {
-    var action = $(this).attr('action');
-    $('#result').slideUp(300, function() {
-      $('#result').hide();
-      $('#submit').attr('disabled', 'disabled');
+  $("#contactform").submit(function () {
+    var action = $(this).attr("action");
+    $("#result").slideUp(300, function () {
+      $("#result").hide();
+      $("#submit").attr("disabled", "disabled");
       $.post(
         action,
         {
-          name: $('#name').val(),
-          email: $('#email').val(),
-          phone: $('#phone').val(),
-          comments: $('#comments').val(),
+          name: $("#name").val(),
+          email: $("#email").val(),
+          phone: $("#phone").val(),
+          comments: $("#comments").val(),
         },
-        function(data) {
-          document.getElementById('result').innerHTML = data;
-          $('#result').slideDown('slow');
-          $('#submit').removeAttr('disabled');
-          if (data.match('success') != null) $('#contactform').slideUp('slow');
-        },
+        function (data) {
+          document.getElementById("result").innerHTML = data;
+          $("#result").slideDown("slow");
+          $("#submit").removeAttr("disabled");
+          if (data.match("success") != null) $("#contactform").slideUp("slow");
+        }
       );
     });
 
@@ -32,27 +34,27 @@ $(document).ready(function() {
   });
 
   // close menu on click
-  $('.navbar-collapse a').on('click', function(e) {
-    $('.navbar-collapse.in').collapse('toggle');
+  $(".navbar-collapse a").on("click", function (e) {
+    $(".navbar-collapse.in").collapse("toggle");
   });
 
   // bind touchstart
-  $('.gallery-inner img').bind('touchstart', function() {
-    $(this).addClass('.gallery-inner  .captionWrapper');
+  $(".gallery-inner img").bind("touchstart", function () {
+    $(this).addClass(".gallery-inner  .captionWrapper");
   });
 
-  $('.gallery-inner  img').bind('touchend', function() {
-    $(this).removeClass('.gallery-inner  .captionWrapper');
+  $(".gallery-inner  img").bind("touchend", function () {
+    $(this).removeClass(".gallery-inner  .captionWrapper");
   });
 
   // parallax init on desktop only
   if (isMobile) {
-    $('.captionWrapper.valign').css({
-      top: '120px',
+    $(".captionWrapper.valign").css({
+      top: "120px",
     });
 
-    $('.parallaxLetter').css({
-      display: 'none',
+    $(".parallaxLetter").css({
+      display: "none",
     });
   } else {
     $(window).stellar({
@@ -63,55 +65,56 @@ $(document).ready(function() {
   }
 
   // fitvids init
-  $('body').fitVids();
+  $("body").fitVids();
 
   // isotope for gallery
-  var $container = $('.gallery');
+  var $container = $(".gallery");
   $container.isotope({
-    filter: '*', // IF YOU WANT TO DISPLAY AT FIRST ONLY ONE FILTER, FOR EXAMPLE DESIGNS: SUBSTIUTE '*' WITH '.designs',
-    itemSelector: '.gallery-inner',
+    filter: "*", // IF YOU WANT TO DISPLAY AT FIRST ONLY ONE FILTER, FOR EXAMPLE DESIGNS: SUBSTIUTE '*' WITH '.designs',
+    itemSelector: ".gallery-inner",
     masonry: {
-      columnWidth: '.grid-sizer, .grid-sizer-two-columns, .grid-sizer-three-columns, .grid-sizer-four-columns',
+      columnWidth:
+        ".grid-sizer, .grid-sizer-two-columns, .grid-sizer-three-columns, .grid-sizer-four-columns",
     },
   });
 
-  $container.imagesLoaded(function() {
-    $container.isotope('layout');
+  $container.imagesLoaded(function () {
+    $container.isotope("layout");
   });
 
-  $('#filters').on('click', 'button', function() {
-    var filterValue = $(this).attr('data-filter');
+  $("#filters").on("click", "button", function () {
+    var filterValue = $(this).attr("data-filter");
     $container.isotope({ filter: filterValue });
   });
 
   // masonry 3 columns
-  var $container2 = $('.blogPostsWrapper');
-  $container2.imagesLoaded(function() {
+  var $container2 = $(".blogPostsWrapper");
+  $container2.imagesLoaded(function () {
     $container2.isotope({
-      itemSelector: '.blogPost',
+      itemSelector: ".blogPost",
       masonry: {
-        columnWidth: '.grid-sizer-blog-3',
+        columnWidth: ".grid-sizer-blog-3",
       },
     });
   });
 
   //    masonry 2 columns
-  var $container3 = $('.blogPostsWrapper2');
-  $container3.imagesLoaded(function() {
+  var $container3 = $(".blogPostsWrapper2");
+  $container3.imagesLoaded(function () {
     $container3.isotope({
-      itemSelector: '.blogPost2',
+      itemSelector: ".blogPost2",
       masonry: {
-        columnWidth: '.grid-sizer-blog-2',
+        columnWidth: ".grid-sizer-blog-2",
       },
     });
   });
 
-  var $container4 = $('.gallery-ecommerce');
-  $container4.imagesLoaded(function() {
+  var $container4 = $(".gallery-ecommerce");
+  $container4.imagesLoaded(function () {
     $container4.isotope({
-      itemSelector: '.ShoppingRelated',
+      itemSelector: ".ShoppingRelated",
       masonry: {
-        columnWidth: '.grid-sizer-three-columns',
+        columnWidth: ".grid-sizer-three-columns",
       },
     });
   });
@@ -119,10 +122,10 @@ $(document).ready(function() {
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* overlay portfolio */
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  $('a.overlay-ajax').click(function() {
-    var url = $(this).attr('href');
-    $('.overlay-section').load(url + ' #transmitter');
-    $('.overlay-close img').tooltip();
+  $("a.overlay-ajax").click(function () {
+    var url = $(this).attr("href");
+    $(".overlay-section").load(url + " #transmitter");
+    $(".overlay-close img").tooltip();
     return false;
   });
 
@@ -144,15 +147,18 @@ $(document).ready(function() {
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* owl-carousels */
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  $('#owl-team').owlCarousel({
+  $("#owl-team").owlCarousel({
     singleItem: true,
     autoPlay: true,
     navigation: true,
-    navigationText: ["<i class='fa fa-angle-left fa-4x'></i>", "<i class='fa fa-angle-right fa-4x'></i>"],
+    navigationText: [
+      "<i class='fa fa-angle-left fa-4x'></i>",
+      "<i class='fa fa-angle-right fa-4x'></i>",
+    ],
   });
 
-  $('#owl-clients').owlCarousel({
-    items: 3,
+  $("#owl-clients").owlCarousel({
+    items: 9,
     navigation: false,
     itemsDesktop: [1199, 3],
     itemsDesktopSmall: [980, 2],
@@ -160,12 +166,12 @@ $(document).ready(function() {
     itemsMobile: [479, 1],
   });
 
-  $('#owl-testimonials').owlCarousel({
+  $("#owl-testimonials").owlCarousel({
     singleItem: true,
     autoPlay: true,
   });
 
-  $('#owl-item').owlCarousel({
+  $("#owl-item").owlCarousel({
     singleItem: true,
     autoPlay: true,
     navigation: true,
@@ -175,7 +181,7 @@ $(document).ready(function() {
     ],
   });
 
-  $('#owl-featured').owlCarousel({
+  $("#owl-featured").owlCarousel({
     items: 3,
     itemsDesktop: [1199, 3],
     itemsDesktopSmall: [980, 2],
@@ -188,7 +194,7 @@ $(document).ready(function() {
     ],
   });
 
-  $('#owl-blog-single').owlCarousel({
+  $("#owl-blog-single").owlCarousel({
     singleItem: true,
     navigation: true,
     navigationText: [
@@ -197,7 +203,7 @@ $(document).ready(function() {
     ],
   });
 
-  $('.owl-ecommerce2', '.owl-ecommerce', '.owl-ecommerce3').owlCarousel({
+  $(".owl-ecommerce2", ".owl-ecommerce", ".owl-ecommerce3").owlCarousel({
     singleItem: false,
     items: 4,
     navigation: false,
@@ -206,10 +212,10 @@ $(document).ready(function() {
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* timers */
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  $('#text-separator-timers').waypoint(
-    function() {
+  $("#text-separator-timers").waypoint(
+    function () {
       // first timer
-      $('.timer1').countTo({
+      $(".timer1").countTo({
         from: 0, // the number you want to start
         to: 8679, // the number you want to reach
         speed: 4000,
@@ -217,7 +223,7 @@ $(document).ready(function() {
       });
 
       // second timer
-      $('.timer2').countTo({
+      $(".timer2").countTo({
         from: 0, // the number you want to start
         to: 340, // the number you want to reach
         speed: 2500,
@@ -225,7 +231,7 @@ $(document).ready(function() {
       });
 
       // third timer
-      $('.timer3').countTo({
+      $(".timer3").countTo({
         from: 0, // the number you want to start
         to: 100, // the number you want to reach
         speed: 2000,
@@ -233,80 +239,80 @@ $(document).ready(function() {
       });
 
       // fourth timer
-      $('.timer4').countTo({
+      $(".timer4").countTo({
         from: 0, // the number you want to start
         to: 3456, // the number you want to reach
         speed: 4000,
         refreshInterval: 10,
       });
     },
-    { offset: 500 },
+    { offset: 500 }
   );
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* shortcodes */
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  $('#myTab a').click(function(e) {
+  $("#myTab a").click(function (e) {
     e.preventDefault();
-    $(this).tab('show');
+    $(this).tab("show");
   });
 
-  $('#myTabPills a').click(function(e) {
+  $("#myTabPills a").click(function (e) {
     e.preventDefault();
-    $(this).tab('show');
+    $(this).tab("show");
   });
 
-  $('.SearchTrigger').on('click', function() {
-    $('.SearchInput').addClass('ActiveSearchInput');
-    $('.SearchInput').css({
+  $(".SearchTrigger").on("click", function () {
+    $(".SearchInput").addClass("ActiveSearchInput");
+    $(".SearchInput").css({
       opacity: 1,
-      '-moz-transition': 'width 0.5s ease-out',
-      '-webkit-transition': 'width 0.5s ease-out',
-      transition: 'width 0.5s ease-out',
+      "-moz-transition": "width 0.5s ease-out",
+      "-webkit-transition": "width 0.5s ease-out",
+      transition: "width 0.5s ease-out",
     });
   });
 
-  $('.SearchCloseTrigger').on('click', function() {
-    $('.SearchInput').css({
+  $(".SearchCloseTrigger").on("click", function () {
+    $(".SearchInput").css({
       opacity: 0,
-      '-moz-transition': 'width 0.5s ease-out',
-      '-webkit-transition': 'width 0.5s ease-out',
-      transition: 'width 0.5s ease-out',
+      "-moz-transition": "width 0.5s ease-out",
+      "-webkit-transition": "width 0.5s ease-out",
+      transition: "width 0.5s ease-out",
     });
-    setTimeout(function() {
-      $('.SearchInput').removeClass('ActiveSearchInput');
+    setTimeout(function () {
+      $(".SearchInput").removeClass("ActiveSearchInput");
     }, 500);
   });
 
-  $('.CubeWrapper').on({
-    mouseenter: function() {
-      $(this).removeClass('show-front');
-      $(this).addClass('show-bottom');
+  $(".CubeWrapper").on({
+    mouseenter: function () {
+      $(this).removeClass("show-front");
+      $(this).addClass("show-bottom");
     },
-    mouseleave: function() {
-      $(this).removeClass('show-bottom');
-      $(this).addClass('show-front');
+    mouseleave: function () {
+      $(this).removeClass("show-bottom");
+      $(this).addClass("show-front");
     },
   });
 
-  (function($, window, undefined) {
+  (function ($, window, undefined) {
     // outside the scope of the jQuery plugin to
     // keep track of all dropdowns
     var $allDropdowns = $();
 
     // if instantlyCloseOthers is true, then it will instantly
     // shut other nav items when a new one is hovered over
-    $.fn.dropdownHover = function(options) {
+    $.fn.dropdownHover = function (options) {
       // don't do anything if touch is supported
       // (plugin causes some issues on mobile)
-      if ('ontouchstart' in document) return this; // don't want to affect chaining
+      if ("ontouchstart" in document) return this; // don't want to affect chaining
 
       // the element we really care about
       // is the dropdown-toggle's parent
       $allDropdowns = $allDropdowns.add(this.parent());
 
-      return this.each(function() {
+      return this.each(function () {
         var $this = $(this),
           $parent = $this.parent(),
           defaults = {
@@ -315,12 +321,12 @@ $(document).ready(function() {
             instantlyCloseOthers: true,
           },
           data = {
-            delay: $(this).data('delay'),
-            hoverDelay: $(this).data('hover-delay'),
-            instantlyCloseOthers: $(this).data('close-others'),
+            delay: $(this).data("delay"),
+            hoverDelay: $(this).data("hover-delay"),
+            instantlyCloseOthers: $(this).data("close-others"),
           },
-          showEvent = 'show.bs.dropdown',
-          hideEvent = 'hide.bs.dropdown',
+          showEvent = "show.bs.dropdown",
+          hideEvent = "hide.bs.dropdown",
           // shownEvent  = 'shown.bs.dropdown',
           // hiddenEvent = 'hidden.bs.dropdown',
           settings = $.extend(true, {}, defaults, options, data),
@@ -328,9 +334,9 @@ $(document).ready(function() {
           timeoutHover;
 
         $parent.hover(
-          function(event) {
+          function (event) {
             // so a neighbor can't open the dropdown
-            if (!$parent.hasClass('open') && !$this.is(event.target)) {
+            if (!$parent.hasClass("open") && !$this.is(event.target)) {
               // stop this event, stop executing any code
               // in this callback but continue to propagate
               return true;
@@ -338,22 +344,22 @@ $(document).ready(function() {
 
             openDropdown(event);
           },
-          function() {
+          function () {
             // clear timer for hover event
             window.clearTimeout(timeoutHover);
-            timeout = window.setTimeout(function() {
-              $this.attr('aria-expanded', 'false');
-              $parent.removeClass('open');
+            timeout = window.setTimeout(function () {
+              $this.attr("aria-expanded", "false");
+              $parent.removeClass("open");
               $this.trigger(hideEvent);
             }, settings.delay);
-          },
+          }
         );
 
         // this helps with button groups!
-        $this.hover(function(event) {
+        $this.hover(function (event) {
           // this helps prevent a double event from firing.
           // see https://github.com/CWSpear/bootstrap-hover-dropdown/issues/55
-          if (!$parent.hasClass('open') && !$parent.is(event.target)) {
+          if (!$parent.hasClass("open") && !$parent.is(event.target)) {
             // stop this event, stop executing any code
             // in this callback but continue to propagate
             return true;
@@ -363,25 +369,22 @@ $(document).ready(function() {
         });
 
         // handle submenus
-        $parent.find('.dropdown-submenu').each(function() {
+        $parent.find(".dropdown-submenu").each(function () {
           var $this = $(this);
           var subTimeout;
           $this.hover(
-            function() {
+            function () {
               window.clearTimeout(subTimeout);
-              $this.children('.dropdown-menu').show();
+              $this.children(".dropdown-menu").show();
               // always close submenu siblings instantly
-              $this
-                .siblings()
-                .children('.dropdown-menu')
-                .hide();
+              $this.siblings().children(".dropdown-menu").hide();
             },
-            function() {
-              var $submenu = $this.children('.dropdown-menu');
-              subTimeout = window.setTimeout(function() {
+            function () {
+              var $submenu = $this.children(".dropdown-menu");
+              subTimeout = window.setTimeout(function () {
                 $submenu.hide();
               }, settings.delay);
-            },
+            }
           );
         });
 
@@ -392,22 +395,23 @@ $(document).ready(function() {
           window.clearTimeout(timeoutHover);
 
           // delay for hover event.
-          timeoutHover = window.setTimeout(function() {
-            $allDropdowns.find(':focus').blur();
+          timeoutHover = window.setTimeout(function () {
+            $allDropdowns.find(":focus").blur();
 
-            if (settings.instantlyCloseOthers === true) $allDropdowns.removeClass('open');
+            if (settings.instantlyCloseOthers === true)
+              $allDropdowns.removeClass("open");
 
             // clear timer for hover event
             window.clearTimeout(timeoutHover);
-            $this.attr('aria-expanded', 'true');
-            $parent.addClass('open');
+            $this.attr("aria-expanded", "true");
+            $parent.addClass("open");
             $this.trigger(showEvent);
           }, settings.hoverDelay);
         }
       });
     };
 
-    $(document).ready(function() {
+    $(document).ready(function () {
       // apply dropdownHover to all elements with the data-hover="dropdown" attribute
       $('[data-hover="dropdown"]').dropdownHover();
     });
