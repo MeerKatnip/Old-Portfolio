@@ -57,10 +57,10 @@
   triggerBttn.addEventListener('click', toggleOverlay);
   triggerBttnTwo.addEventListener('click', toggleOverlay);
   triggerBttnThree.addEventListener('click', toggleOverlay);
-  triggerBttnFour.addEventListener('click', toggleOverlay);
-  triggerBttnFive.addEventListener('click', toggleOverlay);
-  triggerBttnSix.addEventListener('click', toggleOverlay);
-  triggerBttnSeven.addEventListener('click', toggleOverlay);
+  // triggerBttnFour.addEventListener('click', toggleOverlay);
+  // triggerBttnFive.addEventListener('click', toggleOverlay);
+  // triggerBttnSix.addEventListener('click', toggleOverlay);
+  // triggerBttnSeven.addEventListener('click', toggleOverlay);
 
   return false;
 })();

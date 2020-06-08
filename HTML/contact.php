@@ -22,14 +22,14 @@ if(trim($name) == '') {
 	echo '<div class="error_message">You have to enter a name.</div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="error_message">Please enter your e-mail adress, so we can get back to you</div>';
+	echo '<div class="error_message">Please enter your e-mail address, so we can get back to you</div>';
 	exit();
 } else if(!isEmail($email)) {
 	echo '<div class="error_message">Invalid e-mail address, try again.</div>';
 	exit();
 }
 
-$address = "xxx@nowhere.com";
+$address = "amycodesme@gmail.com";
 
 
 $received_subject = 'You\'ve been contacted by ' . $name . '.';
@@ -48,7 +48,7 @@ if(mail($address, $received_subject, $message, $header)) {
 	// Email has sent successfully, echo a success page.
 
 	echo "<h2>Email Sent Successfully.</h2>";
-	echo "<p>Thank you <strong>$name</strong>, your message has been sent to us.</p>";
+	echo "<p>Thank you <strong>$name</strong>, your message has been sent.</p>";
 
 } else {
 
