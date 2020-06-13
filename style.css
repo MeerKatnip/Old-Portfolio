@@ -63,8 +63,8 @@ section .container {
 .separator {
   width: 170px;
   max-width: 170px;
-  margin-top: 120px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .separator.small {
@@ -783,7 +783,7 @@ p.bold {
 
 .textOverlay {
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 50px;
   margin-left: -200px;
   z-index: 6;
 }
@@ -796,7 +796,7 @@ p.bold {
   background-color: white;
 }
 #about .container {
-  padding-top: 200px;
+  padding-top: 75px;
 }
 
 .aboutIconWrapper {
